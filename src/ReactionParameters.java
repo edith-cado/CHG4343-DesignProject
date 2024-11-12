@@ -290,6 +290,9 @@ public class ReactionParameters
     }
     //put here all equals
 
+    public static void test(){
+        int test = 1;
+    }
     //end of equals
 
 }
