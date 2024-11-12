@@ -284,15 +284,27 @@ public class ReactionParameters
     {
         if (comparator==null) return false;
         else if (this.getClass()!=comparator.getClass()) return false;
-        else if (this.reactionParameters != ((ReactionParameters)comparator).reactionParameters) return false;
-        else if (this.rxn!= ((RateLaw)comparator).rxn) return false;
+        for (int i=0; i<inputProperties.length; i++)
+            if(this.inputProperties[i] !=((ReactionParameters)comparator).inputProperties[i]) return false;
+        for (int i=0; i<reactantStoichiometry.length; i++)
+            if(this.reactantStoichiometry[i] !=((ReactionParameters)comparator).reactantStoichiometry[i]) return false;
+        for (int i=0; i<productStoichiometry.length; i++)
+            if(this.productStoichiometry[i] !=((ReactionParameters)comparator).productStoichiometry[i]) return false;
+        for (int i=0; i<inertStoichiometry.length; i++)
+            if(this.inertStoichiometry[i] !=((ReactionParameters)comparator).inertStoichiometry[i]) return false;
+        for (int i=0; i<reactantMoleFraction.length; i++)
+            if(this.reactantMoleFraction[i] !=((ReactionParameters)comparator).reactantMoleFraction[i]) return false;
+        for (int i=0; i<productMoleFraction.length; i++)
+            if(this.productMoleFraction[i] !=((ReactionParameters)comparator).productMoleFraction[i]) return false;
+        for (int i=0; i<inertMoleFraction.length; i++)
+            if(this.inertMoleFraction[i] !=((ReactionParameters)comparator).inertMoleFraction[i]) return false;
+        for (int i=0; i<reactantHeatCapacity.length; i++)
+            if(this.reactantHeatCapacity[i] !=((ReactionParameters)comparator).reactantStoichiometry[i]) return false;
+        for (int i=0; i<productHeatCapacity.length; i++)
+            if(this.productHeatCapacity[i] !=((ReactionParameters)comparator).productHeatCapacity[i]) return false;
+        for (int i=0; i<inertHeatCapacity.length; i++)
+            if(this.inertHeatCapacity[i] !=((ReactionParameters)comparator).inertHeatCapacity[i]) return false;
         return true;
-    }
-    //put here all equals
-
-    public static void test(){
-        int test = 1;
-    }
-    //end of equals
+    } //end of equals
 
 }
