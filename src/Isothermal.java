@@ -6,16 +6,16 @@ public class Isothermal extends AbstractPBR {
     }
 
     public double calculateDXDW(double weight) {
-        double conversion = 0.0;
-        return conversion;
+        double g_X = 0.0;
+        return g_X;
     }
 
     public double calculateDPDW(double weight) {
-        double pressureDrop = 0.0;
-        return pressureDrop;
+        double g_P = 0.0;
+        return g_P;
     }
 
     public double getTemperature() {
-        return temperature;
+        return inputProperties [2];
     }
 }

@@ -19,5 +19,5 @@ public class ODE
         }
 
         return y;
-    }//end of integrate method
+    }
 }//end of Euler class

@@ -1,4 +1,3 @@
-public interface Function
-{
-    public double calculateValue(double t, double [] CA);
+public interface Function {
+    public double calculateValue(double x, double [] y);
 }
