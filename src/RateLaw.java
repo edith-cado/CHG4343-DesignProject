@@ -72,7 +72,7 @@ public class RateLaw
         return k;
     }
 
-    public double calculateRate(double T, Reaction rxn) //for irreversible reaction
+    public double calculateRate(double T, double P Reaction rxn) //for irreversible reaction
     {
         double [] reactantConcentration=rxn.calculateReactantConcentration(reactantFlowrate, productFlowrate, inertFlowrate, T, P);
         double [] reactantStoichiometry=reactionParameters.getReactantStoichiometry();

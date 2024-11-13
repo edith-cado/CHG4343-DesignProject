@@ -27,8 +27,8 @@ public class Driver {
         double[] reactantStoichiometry={1.};
         double[] productStoichiometry={1.};
 
-        Reaction reactionObject = new Reaction(inputProperties, reactantConcentration, reactantStoichiometry, productConcentration, productStoichiometry);
-       RateLaw rateLawObject = new RateLaw (inputProperties, reactionObject);
+        Reaction reactionObject = new Reaction(reaction parameters);
+       RateLaw rateLawObject = new RateLaw (reactionParameters, rxn);
 
        double k;
         k=rateLawObject.calculateK(500);
